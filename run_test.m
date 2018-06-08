@@ -5,7 +5,7 @@ it                  = 20;                           % iterations for CG
 tol                 = 1e-6;                         % tolerance for CG
 gamma               = 3;                            % similarity exponent
 
-folder              = 'pdf/model_testing';          % directory for my data
+folder              = 'pdf/model_testing/train/';   % directory for my data
 images              = imageSet(folder);             % grab images
 
 test_set            = images;                       % load images as test set
