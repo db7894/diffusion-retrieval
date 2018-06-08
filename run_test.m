@@ -5,7 +5,12 @@ it                  = 20;                           % iterations for CG
 tol                 = 1e-6;                         % tolerance for CG
 gamma               = 3;                            % similarity exponent
 
-test_set            = 'oxford5k';                   % oxford5k, paris6k, instre, oxford105k, paris106k
+folder              = 'pdf/model_testing';          % directory for my data
+images              = imageSet(folder);             % grab images
+
+test_set            = images;                       % load images as test set
+
+% test_set            = 'oxford5k';                   % oxford5k, paris6k, instre, oxford105k, paris106k
 cnn_model           = 'siamac';                     % siamac or resnet
 feature_type        = 'regional';                   % regional or global    
 
